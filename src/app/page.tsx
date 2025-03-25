@@ -227,13 +227,13 @@ export default function Home() {
                             rel="noopener noreferrer"
                             className="text-blue-600 hover:text-blue-800 dark:text-blue-400 hover:underline"
                         >
-                            📝 Đăng ký thông tin của bạn cho Website
+                            📝 Đăng ký thông tin của bạn với Website
                         </a>
                         <a
                             href="mailto:kinnguyendang@gmail.com"
                             className="text-blue-600 hover:text-blue-800 dark:text-blue-400 hover:underline"
                         >
-                            ✉️ Nếu có bất cứ vấn đề, xin hãy liên hệ:
+                            ✉️ Vấn Đề | Quảng Cáo. Xin liên Hệ:
                             kinnguyendang@gmail.com
                         </a>
                     </div>
