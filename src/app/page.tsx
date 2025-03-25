@@ -28,7 +28,16 @@ export default function Home() {
                     throw new Error("Network response was not ok");
                 }
                 const data = await response.json();
-                setRepairmen(data);
+                // Shuffle the array using Fisher-Yates algorithm
+                const shuffledData = [...data];
+                for (let i = shuffledData.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [shuffledData[i], shuffledData[j]] = [
+                        shuffledData[j],
+                        shuffledData[i],
+                    ];
+                }
+                setRepairmen(shuffledData);
             } catch (error) {
                 console.error("Error fetching data:", error);
                 setError("Không thể tải dữ liệu. Vui lòng thử lại sau.");
