@@ -18,7 +18,7 @@ export default function Home() {
     const [specializationFilter, setSpecializationFilter] =
         useState<string>("all");
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 10;
+    const itemsPerPage = 9;
 
     useEffect(() => {
         const fetchData = async () => {
