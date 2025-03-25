@@ -160,7 +160,11 @@ export default function Home() {
                                 {person.link && (
                                     <div className="mt-6">
                                         <a
-                                            href={person.link}
+                                            href={
+                                                person.link.startsWith("http")
+                                                    ? person.link
+                                                    : `https://${person.link}`
+                                            }
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200"
