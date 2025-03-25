@@ -18,7 +18,7 @@ export default function Home() {
     const [specializationFilter, setSpecializationFilter] =
         useState<string>("all");
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 6;
+    const itemsPerPage = 10;
 
     useEffect(() => {
         const fetchData = async () => {
@@ -206,11 +206,28 @@ export default function Home() {
 
             {/* Footer */}
             <footer className="bg-white dark:bg-gray-800 shadow-md mt-8">
-                <div className="container mx-auto px-4 py-6">
+                <div className="container mx-auto px-4 py-6 space-y-4">
                     <p className="text-center text-gray-600 dark:text-gray-300">
                         © 2024 Danh Sách Thợ Sửa Máy Ảnh. Tất cả quyền được bảo
                         lưu.
                     </p>
+                    <div className="flex flex-col items-center space-y-2">
+                        <a
+                            href="https://forms.gle/JHr3bmbvKq65kJNX8"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:text-blue-800 dark:text-blue-400 hover:underline"
+                        >
+                            📝 Đăng ký thông tin của bạn cho Website
+                        </a>
+                        <a
+                            href="mailto:kinnguyendang@gmail.com"
+                            className="text-blue-600 hover:text-blue-800 dark:text-blue-400 hover:underline"
+                        >
+                            ✉️ Nếu có bất cứ vấn đề, xin hãy liên hệ:
+                            kinnguyendang@gmail.com
+                        </a>
+                    </div>
                 </div>
             </footer>
         </div>
